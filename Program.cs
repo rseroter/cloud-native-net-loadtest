@@ -13,7 +13,7 @@ namespace bootcamp_core_loadtester
 
             for(int i = 0; i < 2000; i++)
             {
-                var result = c.GetStringAsync("https://c<enter your service>/api/products").Result; 
+                var result = c.GetStringAsync("https://<enter your service>/api/products").Result; 
                 Console.WriteLine("calling API");
                 
                 System.Threading.Thread.Sleep(200);
