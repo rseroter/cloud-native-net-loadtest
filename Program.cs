@@ -11,12 +11,12 @@ namespace bootcamp_core_loadtester
 
             HttpClient c = new HttpClient();
 
-            for(int i = 0; i < 2000; i++)
+            for(int i = 0; i < 2500; i++)
             {
                 var result = c.GetStringAsync("https://<enter your service>/api/products").Result; 
-                Console.WriteLine("calling API");
+                Console.WriteLine("calling API - " + DateTime.Now.ToString());
                 
-                System.Threading.Thread.Sleep(200);
+                System.Threading.Thread.Sleep(100);
             }   
 
             Console.WriteLine("done calling API");
